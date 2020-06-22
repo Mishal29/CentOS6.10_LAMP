@@ -67,9 +67,9 @@
                     <tbody class="table-striped">
                         <?php foreach($result as $value){ ?>
                             <tr>
-                                <td><?php echo '$value[id]'; ?></td>
-                                <td><?php echo '$value[name]'; ?></td>
-                                <td><?php echo '$value[age]'; ?></td>
+                                <td><?php echo "$value[id]"; ?></td>
+                                <td><?php echo "$value[name]"; ?></td>
+                                <td><?php echo "$value[age]"; ?></td>
                             </tr>
                         <?php } ?>
                     </tbody>
