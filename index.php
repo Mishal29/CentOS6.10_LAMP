@@ -1,10 +1,10 @@
 <?php
-    $dsn = 'mysql:dbname=sample_DB;host=localhost;';
-    $user = 'h.sasaki';
+    $dsn = 'mysql:dbname=sample_db;host=localhost;';
+    $user = 'sasaki';
     $password = 'sasaki';
     try {
         $dbh = new PDO($dsn, $user, $password);
-        $sql="select * from sample_table;";
+        $sql="select * from user;";
         $result = $dbh->query($sql);
     } catch (PDOException $e) {
         echo "接続失敗: " . $e->getMessage() . "\n";
