@@ -4,7 +4,7 @@
     $password = 'sasaki';
     try {
         $dbh = new PDO($dsn, $user, $password);
-        $dbh->setAtribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         $id = $_POST['id'];
         $name = $_POST['name'];
@@ -16,8 +16,7 @@
         $pstmt->execute($params);
 
         header('Location: index.php?flg=1');
-
-        $result = $dbh->query($sql);
+        
     } catch (PDOException $e) {
         header('Location: index.php?flg=2?error='.$e->getMessage());
         exit();
