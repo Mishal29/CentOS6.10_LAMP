@@ -18,8 +18,10 @@
         header('Location: index.php?flg=1');
 
         $result = $dbh->query($sql);
-    } catch (PDOException $e) {
-        echo 'error';
+    } catch (PDOException $e) { 
+?>
+    <h1>error</h1>
+<?php
         header('Location: index.php?flg=2?error='.$e->getMessage());
         exit();
     }
