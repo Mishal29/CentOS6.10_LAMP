@@ -24,7 +24,7 @@
     <nav class="navbar bg-dark navbar-dark">
         <div class="container-fruid">
             <div class="nav-header">
-                <a href="index.html" class="navbar-brand fixed-top">LAMP SAMPLE PAGE</a>
+                <a href="index.html" class="navbar-brand">LAMP SAMPLE PAGE</a>
             </div>
         </div>
     </nav>
