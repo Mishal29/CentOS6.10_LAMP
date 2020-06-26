@@ -24,7 +24,7 @@
     <nav class="navbar bg-dark navbar-dark">
         <div class="container-fruid">
             <div class="nav-header">
-                <a href="index.html" class="navbar-brand">LAMP SAMPLE PAGE</a>
+                <a href="index.html" class="navbar-brand fixed-top">LAMP SAMPLE PAGE</a>
             </div>
         </div>
     </nav>
@@ -67,9 +67,9 @@
                     <tbody class="table-striped">
                         <?php foreach($result as $value){ ?>
                             <tr>
-                                <td><?php echo '$value[id]'; ?></td>
-                                <td><?php echo '$value[name]'; ?></td>
-                                <td><?php echo '$value[age]'; ?></td>
+                                <td><?php echo "$value[id]"; ?></td>
+                                <td><?php echo "$value[name]"; ?></td>
+                                <td><?php echo "$value[age]"; ?></td>
                             </tr>
                         <?php } ?>
                     </tbody>
@@ -77,12 +77,18 @@
             </div>
             <div class="tab-pane" id="insert">
                 <p>sample tab 2</p>
+
+
             </div>
             <div class="tab-pane" id="update">
                 <p>sample tab 3</p>
+
+
             </div>
             <div class="tab-pane" id="delete">
                 <p>sample tab 4</p>
+
+
             </div>
         </div>
     </div>
