@@ -19,6 +19,7 @@
 
         $result = $dbh->query($sql);
     } catch (PDOException $e) {
+        echo 'error';
         header('Location: index.php?flg=2?error='.$e->getMessage());
         exit();
     }
