@@ -39,6 +39,12 @@
         </div>
     </div>
 
+    <?php if($_GET['flg'] == 1){ ?>
+        <p>Success</p>
+    <?php }else if($_GET['flg'] == 2){ ?>
+        <p>Failed</p>
+    <?php } ?>
+
     <div class="container">
         <ul class="nav nav-tabs">
             <li class="nav-item">
