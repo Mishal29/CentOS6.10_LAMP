@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>LAMP SAMPLE PAGE</title>
 </head>
-<body>
-    <nav class="navbar bg-dark navbar-dark">
+<body class="pt-10">
+    <nav class="navbar bg-dark navbar-dark fixed-top">
         <div class="container-fruid">
             <div class="nav-header">
                 <a href="index.html" class="navbar-brand">LAMP SAMPLE PAGE</a>
