@@ -39,11 +39,23 @@
         </div>
     </div>
 
-    <?php if($_GET['flg'] == 1){ ?>
-        <p>Success</p>
-    <?php }else if($_GET['flg'] == 2){ ?>
-        <p>Failed</p>
-    <?php } ?>
+    <div class="container">
+        <?php if($_GET['flg'] == 1){ ?>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Success</strong>　Processing complete
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        <?php }else if($_GET['flg'] == 2){ ?>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>Failed</strong> processing couldn't completed
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        <?php } ?>
+    </div>
 
     <div class="container">
         <ul class="nav nav-tabs">
