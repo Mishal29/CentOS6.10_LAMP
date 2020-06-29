@@ -151,7 +151,7 @@
                                 <td>
                                     <form action="./delete.php" method="get">
                                         <input type="hidden" name="id" id="id" value="<?php echo "$value[id]"; ?>">
-                                        <button class="btn btn-danger" type="submit"></button>
+                                        <button class="btn btn-danger" type="submit">delete</button>
                                     </form>
                                 </td>
                             </tr>
