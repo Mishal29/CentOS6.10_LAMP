@@ -6,6 +6,8 @@
         $dbh = new PDO($dsn, $user, $password);
         $sql="select * from user;";
         $result = $dbh->query($sql);
+        $result2 = $dbh->query($sql);
+
     } catch (PDOException $e) {
         echo "接続失敗: " . $e->getMessage() . "\n";
         exit();
@@ -130,9 +132,32 @@
                 </form>
             </div>
             <div class="tab-pane" id="delete">
-                <p>sample tab 4</p>
-
-
+                <table class="table table-hover mt-1">
+                    <caption>sample_table list</caption>
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>-</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-striped">
+                        <?php foreach($result2 as $value){ ?>
+                            <tr>
+                                <td><?php echo "$value[id]"; ?></td>
+                                <td><?php echo "$value[name]"; ?></td>
+                                <td><?php echo "$value[age]"; ?></td>
+                                <td>
+                                    <form action="./delete.php" method="get">
+                                        <input type="hidden" name="id" id="id" value="<?php echo "$value[id]"; ?>">
+                                        <button class="btn btn-danger" type="submit"></button>
+                                    </form>
+                                </td>
+                            </tr>
+                        <?php } ?>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
